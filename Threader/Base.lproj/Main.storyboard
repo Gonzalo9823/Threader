@@ -12,6 +12,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="zIQ-Jt-98W" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="MZr-F7-u6T">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -24,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="-252" y="-1.3493253373313345"/>
         </scene>
-        <!--Threads-->
+        <!--Boards-->
         <scene sceneID="2RV-rD-uJK">
             <objects>
-                <viewController id="jnh-9n-80m" customClass="BoardsViewController" customModule="Threader" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jnh-9n-80m" userLabel="Boards" customClass="BoardsViewController" customModule="Threader" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="akA-yP-2dS"/>
                         <viewControllerLayoutGuide type="bottom" id="GMK-U3-MqE"/>
@@ -37,6 +38,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="erq-tF-AwV">
+                                <color key="backgroundColor" red="0.96068006753921509" green="0.96084433794021606" blue="0.96066969633102417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem title="Boards" id="hj2-LZ-QuY">
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="1Qa-BM-Vc1">
@@ -54,7 +56,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tVc-99-IlA" id="IL7-l4-Bew">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -67,12 +69,12 @@
                             <constraint firstItem="erq-tF-AwV" firstAttribute="top" secondItem="SVI-AI-mcD" secondAttribute="top" constant="20" id="7An-Mu-6VF"/>
                             <constraint firstItem="15X-6r-M8G" firstAttribute="trailing" secondItem="erq-tF-AwV" secondAttribute="trailing" id="B9X-W1-ogX"/>
                             <constraint firstItem="15X-6r-M8G" firstAttribute="leading" secondItem="erq-tF-AwV" secondAttribute="leading" id="EHE-68-rWM"/>
-                            <constraint firstItem="15X-6r-M8G" firstAttribute="bottom" secondItem="GMK-U3-MqE" secondAttribute="top" id="HJj-ff-wyk"/>
                             <constraint firstItem="15X-6r-M8G" firstAttribute="top" secondItem="erq-tF-AwV" secondAttribute="bottom" id="WVg-lf-WZY"/>
                             <constraint firstAttribute="trailing" secondItem="erq-tF-AwV" secondAttribute="trailing" id="mfV-gK-5zD"/>
+                            <constraint firstItem="15X-6r-M8G" firstAttribute="bottom" secondItem="GMK-U3-MqE" secondAttribute="top" id="x7e-iy-346"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Threads" id="S6Z-zq-QEh"/>
+                    <tabBarItem key="tabBarItem" title="Boards" id="S6Z-zq-QEh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MLc-ga-Cum" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,7 +93,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BII-Qe-T5N" id="ab3-Zi-Av8">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
